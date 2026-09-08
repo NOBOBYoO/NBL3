@@ -19,7 +19,6 @@
     <a href="#download-options">Downloads</a> ·
     <a href="#requirements">Requirements</a> ·
     <a href="#installation">Installation</a> ·
-    <a href="#visual-identity">Palette</a> ·
     <a href="#support">Support</a>
   </p>
 </div>
@@ -117,33 +116,6 @@ Use **Assign or Replace City Leader** from an SS2 City Planner's Desk. NBL3 inte
 - Choose fullscreen or windowed display mode in Settings.
 - Choose **Open SS2 barter menu** to use SS2's original picker.
 - Choose **Reset leaders cache** when SS2 has failed to register newly installed cards, then allow the rebuild time to finish.
-
-## Visual identity
-
-NBL3 uses a dark industrial interface with cyan navigation, oxidized-rust structure, silver highlights, and semantic colors for leader information.
-
-| Role | Color | Hex |
-| --- | --- | --- |
-| Primary text | Ice White | `#E8EAEE` |
-| Secondary text | Cool Gray | `#9AA3AE` |
-| Dim text | Slate | `#6E7680` |
-| Highlight | Silver | `#C0C0C0` |
-| Primary signal | NBL Cyan | `#2EC8D0` |
-| Structural accent | Oxide Rust | `#BE5634` |
-| Foundation | Deep Navy | `#0C1214` |
-| Panel | Charcoal | `#14181A` |
-| Raised panel | Steel Charcoal | `#1A2022` |
-| Leader list | Near Black | `#0B0E10` |
-
-Trait and context tags use their own semantic palette:
-
-| Tag | Color | Hex |
-| --- | --- | --- |
-| Major trait | Bright Cyan | `#3ECAD4` |
-| Minor trait | Muted Green | `#8FD17A` |
-| Weakness | Soft Red | `#E07A74` |
-| Assigned leader | Warm Gold | `#F5D18C` |
-| Settlement restriction | Pale Lavender | `#C9BAFF` |
 
 ## Support
 
