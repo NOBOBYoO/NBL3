@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.0] - 2026-09-09
+
+### ✨ Additions
+
+- Added full controller support for the leader panel. Xbox and PlayStation button prompts follow the controller style set in PrismaUI.
+- D-pad moves through leader cards and settings. Shoulder buttons jump between search, the list, settings, Assign, and Close. Triggers switch leader packs.
+- The left stick moves an on-screen cursor; confirm clicks what is under it or uses the highlighted control. The right stick scrolls the list or settings. Cancel closes the panel.
+- Added a Controller cursor speed setting for the left stick. Mouse speed is unchanged.
+- NBL3 now appears in the Prisma Dock on the ESC menu, with the Nobody's Leaders 3 badge, a short description, and a link to the Nexus page.
+
 ## [0.1.0] - 2026-09-06
 
 ### ✨ Additions

@@ -43,7 +43,9 @@ NBL3 can be installed as a traditional leader pack. An optional F4SE and PrismaU
 - Searches leaders by character, trait, assignment, restriction, and pack metadata.
 - Filters installed leader packs and can place currently available leaders first.
 - Supports fullscreen and windowed layouts from compact displays through 4K and 8K resolutions.
-- Provides access to SS2's original barter-menu picker from inside the panel.
+- Supports Xbox and PlayStation controllers, with on-screen prompts that follow PrismaUI's controller style.
+- Lists NBL3 in the Prisma Dock on the ESC menu, with a short description and a Nexus link.
+- Provides access to SS2's original Assign Leader menu from inside the panel.
 - Includes a leader-cache reset control for SS2 registration troubleshooting.
 - Integrates Automatron and Vault-Tec Workshop support through soft-linked scripts without requiring separate DLC support plugins.
 
@@ -57,7 +59,7 @@ Kinggath was informed of the native interception used by the optional panel and 
 
 ## Download options
 
-The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two packages.
+The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two separate GitHub releases. Install only one.
 
 ### SS2 — Nobody's Leaders 3
 
@@ -84,7 +86,7 @@ The F4SE package additionally requires:
 - [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.1 or newer**
 - Microsoft Visual C++ 2015–2022 Redistributable
 
-The v0.1.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
+The v0.2.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
 
 ## Installation
 
@@ -114,7 +116,8 @@ Use **Assign or Replace City Leader** from an SS2 City Planner's Desk. NBL3 inte
 - Hover a trait, assignment, or settlement-limit tag to see its description.
 - Use pack filters and search to narrow the roster.
 - Choose fullscreen or windowed display mode in Settings.
-- Choose **Open SS2 barter menu** to use SS2's original picker.
+- On a controller, the hint strip shows move, cursor, scroll, confirm, close, box, and pack actions.
+- Choose **Open original Assign Leader menu** to use SS2's original picker.
 - Choose **Reset leaders cache** when SS2 has failed to register newly installed cards, then allow the rebuild time to finish.
 
 ## Support
