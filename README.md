@@ -59,15 +59,15 @@ Kinggath was informed of the native interception used by the optional panel and 
 
 ## Download options
 
-The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two separate GitHub releases. Install only one.
+The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two independently versioned packages. Install only one.
 
 ### SS2 — Nobody's Leaders 3
 
-The traditional leader pack. It contains the main ESP and required Papyrus scripts and uses SS2's standard leader-selection interface.
+The traditional leader pack. It contains the main ESP and required Papyrus scripts and uses SS2's standard leader-selection interface. Current pack: [v0.1.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.1.0). This version does not move when only the overlay changes.
 
 ### NBL3 F4SE
 
-The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser.
+The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.2.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.2.0-f4se).
 
 SHA-256 checksum files are supplied with every download so the archives can be verified before installation.
 
