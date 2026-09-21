@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.1a] - 2026-09-21
+
+### 🛠️ Fixes
+
+- Choosing Assign Leader at the City Planner's Desk no longer crashes the game.
+
 ## [0.2.1] - 2026-09-21
 
 F4SE package only. The standalone leader pack remains **0.1.0**.
