@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.1] - 2026-09-21
+
+F4SE package only. The standalone leader pack remains **0.1.0**.
+
+This overlay is built against **PrismaUI F4 2.1.1**. If you updated Prisma, you need this NBL3 update: 0.2.0 will not load with Prisma 2.1.1.
+
+### 🔄 Changes
+
+- The F4SE overlay now requires **PrismaUI F4 2.1.1**.
+- Controller cursor speed now starts at 5.
+
+### 🛠️ Fixes
+
+- Prisma Dock shows the Nobody's Leaders 3 logo.
+- After using a controller in the panel, picking up mouse or keyboard switches input again without turning Controller off in Options.
+- Changing Controller cursor speed no longer makes the mouse extremely sensitive.
+- The mouse is no longer trapped in a square on the screen after NBL3 loads.
+
 ## [0.2.0] - 2026-09-09
 
 F4SE package only. The standalone leader pack remains **0.1.0**.

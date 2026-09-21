@@ -67,7 +67,7 @@ The traditional leader pack. It contains the main ESP and required Papyrus scrip
 
 ### NBL3 F4SE
 
-The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.2.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.2.0-f4se).
+The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.2.1](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.2.1-f4se).
 
 SHA-256 checksum files are supplied with every download so the archives can be verified before installation.
 
@@ -83,10 +83,10 @@ The F4SE package additionally requires:
 
 - [Fallout 4 Script Extender](https://f4se.silverlock.org/) for the installed game runtime
 - [Address Library for F4SE Plugins](https://www.nexusmods.com/fallout4/mods/47327) for the installed game runtime
-- [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.1 or newer**
+- [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.1.1**
 - Microsoft Visual C++ 2015–2022 Redistributable
 
-The v0.2.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
+The v0.2.1 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. It is built against PrismaUI F4 **2.1.1**; NBL3 0.2.0 will not load with that Prisma update. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
 
 ## Installation
 
@@ -122,7 +122,7 @@ Use **Assign or Replace City Leader** from an SS2 City Planner's Desk. NBL3 inte
 
 ## Support
 
-- **Panel does not open:** confirm that Fallout 4 was launched through F4SE and that PrismaUI F4 2.1 or newer is installed.
+- **Panel does not open:** confirm that Fallout 4 was launched through F4SE and that PrismaUI F4 2.1.1 is installed. NBL3 0.2.0 cannot load with Prisma 2.1.1.
 - **Leader pack is missing:** confirm that the ESP and every SS2 chapter are enabled, then allow SS2's registration process to finish.
 - **A leader remains unavailable:** NBL3 reflects SS2's own availability and settlement checks. Review the card's restrictions and character recruitment state.
 - **Log location:** `Documents\My Games\Fallout4\F4SE\NBL3.log`.
