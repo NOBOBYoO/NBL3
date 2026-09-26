@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.0] - 2026-09-26
+
+F4SE package only. The standalone leader pack remains **0.1.0**.
+
+### 🔄 Changes
+
+- The F4SE module no longer requires the NBL3 plugin to be enabled for the panel to work. The plugin is treated like any other addon or leader pack, and stays independent of the panel.
+- An internal timer now improves the fallback to SS2's normal picker when the panel fails, never finishes loading, or another menu is blocking it.
+
+### 🛠️ Fixes
+
+- Fallout 4 **1.10.163** no longer freezes on the main menu.
+- Fixed occasion where the desk option was being swallowed once the panel exists, with SS2 only started later on a path that often never ran. If the panel then failed to appear, nothing opened.
+
 ## [0.2.1a] - 2026-09-21
 
 ### 🛠️ Fixes

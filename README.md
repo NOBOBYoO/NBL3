@@ -67,7 +67,7 @@ The traditional leader pack. It contains the main ESP and required Papyrus scrip
 
 ### NBL3 F4SE
 
-The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.2.1a](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.2.1a-f4se).
+The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.3.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.3.0-f4se).
 
 SHA-256 checksum files are supplied with every download so the archives can be verified before installation.
 
@@ -86,7 +86,7 @@ The F4SE package additionally requires:
 - [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.1.1**
 - Microsoft Visual C++ 2015–2022 Redistributable
 
-The v0.2.1a native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. It is built against PrismaUI F4 **2.1.1**; NBL3 0.2.0 will not load with that Prisma update. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
+The v0.3.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. It is built against PrismaUI F4 **2.1.1**; NBL3 0.2.0 will not load with that Prisma update. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
 
 ## Installation
 
