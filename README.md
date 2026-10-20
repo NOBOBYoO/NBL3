@@ -11,6 +11,7 @@
     <a href="https://github.com/NOBOBYoO/NBL3/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/NOBOBYoO/NBL3?style=for-the-badge&label=LATEST_RELEASE&labelColor=0C1214&color=2EC8D0"></a>
     <a href="https://github.com/NOBOBYoO/NBL3/releases"><img alt="Release downloads" src="https://img.shields.io/github/downloads/NOBOBYoO/NBL3/total?style=for-the-badge&label=DOWNLOADS&labelColor=0C1214&color=BE5634"></a>
     <a href="https://docs.google.com/spreadsheets/d/1NsPlSrSbldQVzK8Z6ulcnFRZs1woYwue00RaQphGflQ/edit?gid=253869683#gid=253869683"><img alt="Leader list" src="https://img.shields.io/badge/LEADER_LIST-GOOGLE_SHEET-8FD17A?style=for-the-badge&labelColor=0C1214&logo=google-sheets&logoColor=E8EAEE"></a>
+    <a href="https://creations.bethesda.net/en/fallout4/details/02a52796-4dac-4399-8f5a-0016cfe82d2c/Nobody__39_s_Leaders_3"><img alt="Bethesda.net Xbox and PC" src="https://img.shields.io/badge/BETHESDA.NET-XBOX_%7C_PC-E8EAEE?style=for-the-badge&labelColor=0C1214"></a>
   </p>
 
   <p>
@@ -36,7 +37,7 @@ NBL3 can be installed as a traditional leader pack. An optional F4SE and PrismaU
 ## Features
 
 - Adds 146 registered leader cards across Fallout 4, supported DLC, and all three SS2 chapters.
-- Gives every NBL3 leader at least one major or minor trait; weaknesses remain optional.
+- Gives every NBL3 leader at least one major or minor trait. Every Fallout 4 leader also has a weakness; a few SS2 leaders have none.
 - Shows major traits, minor traits, weaknesses, and their SS2 descriptions.
 - Shows whether a character already leads a settlement.
 - Shows settlement restrictions for leaders who can only lead specific settlements.
@@ -49,6 +50,20 @@ NBL3 can be installed as a traditional leader pack. An optional F4SE and PrismaU
 - Includes a leader-cache reset control for SS2 registration troubleshooting.
 - Integrates Automatron and Vault-Tec Workshop support through soft-linked scripts without requiring separate DLC support plugins.
 
+### What's new since NBL2
+
+- 146 leader cards, up from NBL2's 70; no NBL2 leader was dropped.
+- All 74 recruitable SS2 characters (Chapters 1–3) added; NBL2 had none.
+- New Fallout 4 leaders: Ben Gibson and Jezebel. Automatron coverage is now 3 leaders (Ada, Isabel Cruz, Jezebel).
+- Fallout 4 traits reworked to fit each character: 61 of the 70 returning leaders changed at least one trait.
+- At most one major, one minor, and one weakness per card; every Fallout 4 leader now has both a minor trait and a weakness.
+- Card descriptions match each card's actual traits, in one consistent format.
+- Single plugin with no DLC masters and no vanilla record edits (NBL2 needed 2 patch plugins and edited 18 vanilla NPCs and 5 cells).
+- Safer quest restart and `NBL3:`-namespaced scripts.
+- A release validator checks every build against the reviewed roster.
+- The Leaders Sheet was rebuilt with SS2 characters and wiki links.
+- The Leader Pack is versioned separately from the F4SE module.
+
 ## Sim Settlements 2 behavior
 
 NBL3 preserves SS2's leader system. The optional panel reads SS2's registered, available, and dead leader-card lists and follows SS2's normal checks and assignment sequence. Selecting the original SS2 picker takes the same `ShowLeaderSelect` path used by the City Planner's Desk.
@@ -59,17 +74,24 @@ Kinggath was informed of the native interception used by the optional panel and 
 
 ## Download options
 
-The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two independently versioned packages. Install only one.
+The [Releases page](https://github.com/NOBOBYoO/NBL3/releases) provides two independently versioned packages. Install only one: the F4SE package already contains the complete leader pack, so do not combine it with the leader pack from GitHub, Nexus Mods, or Bethesda.net.
+
+| Package | PC | Xbox |
+| --- | --- | --- |
+| SS2 — Nobody's Leaders 3 (Leader Pack) | [GitHub Releases](https://github.com/NOBOBYoO/NBL3/releases), [Nexus Mods](https://www.nexusmods.com/fallout4/mods/108093), [Bethesda.net](https://creations.bethesda.net/en/fallout4/details/02a52796-4dac-4399-8f5a-0016cfe82d2c/Nobody__39_s_Leaders_3) | [Bethesda.net](https://creations.bethesda.net/en/fallout4/details/02a52796-4dac-4399-8f5a-0016cfe82d2c/Nobody__39_s_Leaders_3) |
+| NBL3 F4SE | [GitHub Releases](https://github.com/NOBOBYoO/NBL3/releases), [Nexus Mods](https://www.nexusmods.com/fallout4/mods/108093) | Not available |
 
 ### SS2 — Nobody's Leaders 3
 
-The traditional leader pack. It contains the main ESP and required Papyrus scripts and uses SS2's standard leader-selection interface. Current pack: [v0.1.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.1.0). This version does not move when only the overlay changes.
+The traditional leader pack. It contains the main ESP and required Papyrus scripts and uses SS2's standard leader-selection interface. Current pack: [v1.0.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v1.0.0-leader-pack). This version does not move when only the overlay changes.
+
+Also available on Xbox and PC through [Bethesda.net](https://creations.bethesda.net/en/fallout4/details/02a52796-4dac-4399-8f5a-0016cfe82d2c/Nobody__39_s_Leaders_3).
 
 ### NBL3 F4SE
 
-The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. Current module: [v0.3.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.3.0-f4se).
+The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. PC only: it requires F4SE and PrismaUI and is not available on Xbox or Bethesda.net. Current module: [v0.3.1](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.3.1-f4se).
 
-SHA-256 checksum files are supplied with every download so the archives can be verified before installation.
+SHA-256 checksum files are supplied with every GitHub download so the archives can be verified before installation.
 
 ## Requirements
 
@@ -86,7 +108,7 @@ The F4SE package additionally requires:
 - [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.1.1**
 - Microsoft Visual C++ 2015–2022 Redistributable
 
-The v0.3.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. It is built against PrismaUI F4 **2.1.1**; NBL3 0.2.0 will not load with that Prisma update. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
+The v0.3.1 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. It is built against PrismaUI F4 **2.1.1**; NBL3 0.2.0 will not load with that Prisma update. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
 
 ## Installation
 
@@ -98,7 +120,11 @@ The v0.3.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980
 4. Confirm that `SS2_NobodysLeaders3.esp` is enabled.
 5. With the F4SE package, launch Fallout 4 through F4SE.
 
-Only install one NBL3 package. The F4SE archive already includes the complete leader pack.
+Only install one NBL3 package. The F4SE archive already includes the complete leader pack, so do not also install the Bethesda.net leader pack.
+
+### Bethesda.net (Xbox and PC)
+
+The leader pack can be installed from the in-game Creations menu or the [Bethesda.net Creations page](https://creations.bethesda.net/en/fallout4/details/02a52796-4dac-4399-8f5a-0016cfe82d2c/Nobody__39_s_Leaders_3). Install Workshop Framework and Sim Settlements 2 (with Chapters 2 and 3) first. The F4SE panel is not available through Bethesda.net.
 
 ### Manual installation
 
@@ -128,6 +154,10 @@ Use **Assign or Replace City Leader** from an SS2 City Planner's Desk. NBL3 inte
 - **Log location:** `Documents\My Games\Fallout4\F4SE\NBL3.log`.
 
 When reporting a problem, include the exact Fallout 4 runtime, NBL3 version, `NBL3.log`, `f4se.log`, `PrismaUI_F4.log`, load order, affected leader or settlement, and reproduction steps.
+
+Support for continued development is welcome on Ko-fi.
+
+<a href='https://ko-fi.com/Z7Z028MXCC' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## AI usage disclosure
 
