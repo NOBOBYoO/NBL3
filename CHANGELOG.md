@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.2] - 2026-10-27
+
+F4SE package only. The standalone leader pack remains **1.0.0**.
+
+### ✨ Additions
+
+- The log now shows the installed PrismaUI F4 version.
+- A warning is written to the log when the installed PrismaUI F4 is older than 2.2.1.2.
+
+### 🔄 Changes
+
+- Works with PrismaUI F4 **2.2.1.2**, now the recommended version.
+- The panel does less background work while open.
+
 ## [1.0.0] - 2026-10-20 - Leader Pack
 
 Leader Pack **1.0.0** (ESP + Papyrus scripts). First stable Leader Pack release; available on Nexus Mods, GitHub Releases and Bethesda.net (Xbox and PC).
