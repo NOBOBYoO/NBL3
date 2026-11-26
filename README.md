@@ -38,16 +38,20 @@ NBL3 can be installed as a traditional leader pack. An optional F4SE and PrismaU
 
 - Adds 146 registered leader cards across Fallout 4, supported DLC, and all three SS2 chapters.
 - Gives every NBL3 leader at least one major or minor trait. Every Fallout 4 leader also has a weakness; a few SS2 leaders have none.
-- Shows major traits, minor traits, weaknesses, and their SS2 descriptions.
+- Shows the traits SS2 applies to each card (major, minor, and weakness) with their SS2 descriptions.
+- Checks every leader with SS2 for the settlement being managed and greys out the ones SS2 would refuse, with the reason.
+- Shows a details area for the selected leader, with full trait effects, card restrictions, and the current leader's traits for comparison.
 - Shows whether a character already leads a settlement.
 - Shows settlement restrictions for leaders who can only lead specific settlements.
 - Searches leaders by character, trait, assignment, restriction, and pack metadata.
 - Filters installed leader packs and can place currently available leaders first.
-- Supports fullscreen and windowed layouts from compact displays through 4K and 8K resolutions.
+- Supports fullscreen and windowed layouts from compact displays through 4K and 8K resolutions, with an Interface scale setting from 75% to 200%.
+- Pauses the game while the panel is open by default, like SS2's own leader menu.
 - Supports Xbox and PlayStation controllers, with on-screen prompts that follow PrismaUI's controller style.
 - Lists NBL3 in the Prisma Dock on the ESC menu, with a short description and a Nexus link.
 - Provides access to SS2's original Assign Leader menu from inside the panel.
-- Includes a leader-cache reset control for SS2 registration troubleshooting.
+- Includes **Refresh SS2 leader list**, which runs SS2's own leader-card update and reloads the list without closing the panel.
+- Shows the full version notes inside the panel.
 - Integrates Automatron and Vault-Tec Workshop support through soft-linked scripts without requiring separate DLC support plugins.
 
 ### What's new since NBL2
@@ -68,7 +72,9 @@ NBL3 can be installed as a traditional leader pack. An optional F4SE and PrismaU
 
 NBL3 preserves SS2's leader system. The optional panel reads SS2's registered, available, and dead leader-card lists and follows SS2's normal checks and assignment sequence. Selecting the original SS2 picker takes the same `ShowLeaderSelect` path used by the City Planner's Desk.
 
-The panel also lists leaders from other installed add-on and leader packs through SS2's normal registration system. Each pack is identified by its pack name and author. NBL3 does not remove or hide another pack's cards by default.
+Before a leader is assigned, the panel asks SS2's own eligibility check for the settlement being managed, without SS2's messages, so leaders SS2 would refuse are greyed out instead of failing after **Assign**. Assignment still runs SS2's full check and confirmation.
+
+The panel also lists leaders from other installed add-on and leader packs through SS2's normal registration system. Each pack is identified by its pack name and author. NBL3 does not remove or hide another pack's cards by default. NBL3 takes no credit for the leader cards of other add-on or leader packs; all credit goes to their respective authors. NBL3 simply provides a better interface for any leader pack.
 
 Kinggath was informed of the native interception used by the optional panel and granted permission for this approach. SS2 source files are not modified.
 
@@ -89,7 +95,7 @@ Also available on Xbox and PC through [Bethesda.net](https://creations.bethesda.
 
 ### NBL3 F4SE
 
-The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. PC only: it requires F4SE and PrismaUI and is not available on Xbox or Bethesda.net. Current module: [v0.3.2](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.3.2-f4se).
+The complete leader pack plus the F4SE module, PrismaUI panel, and configuration. Install this package to use NBL3's leader browser. PC only: it requires F4SE and PrismaUI and is not available on Xbox or Bethesda.net. Current module: [v0.4.0](https://github.com/NOBOBYoO/NBL3/releases/tag/v0.4.0-f4se).
 
 SHA-256 checksum files are supplied with every GitHub download so the archives can be verified before installation.
 
@@ -108,7 +114,7 @@ The F4SE package additionally requires:
 - [PrismaUI F4](https://www.nexusmods.com/fallout4/mods/105454) **2.2.1.2** (recommended)
 - Microsoft Visual C++ 2015–2022 Redistributable
 
-The v0.3.2 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. PrismaUI F4 **2.2.1.2** is recommended; older PrismaUI versions log a warning. NBL3 0.2.0 does not load with PrismaUI 2.1.1 or newer. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
+The v0.4.0 native module declares support for Fallout 4 **1.10.163**, **1.10.980**, **1.10.984**, **1.11.137**, **1.11.159**, **1.11.169**, **1.11.191**, **1.11.221**, and **1.11.240**. PrismaUI F4 **2.2.1.2** is recommended; older PrismaUI versions log a warning. NBL3 0.2.0 does not load with PrismaUI 2.1.1 or newer. Install matching versions of F4SE, Address Library, and other runtime-specific dependencies.
 
 ## Installation
 
@@ -132,25 +138,26 @@ Extract the selected archive into the Fallout 4 `Data` directory while preservin
 
 ### Leader registration
 
-SS2 registers leader packs asynchronously. Newly installed or reset leaders may take several minutes, and heavily scripted saves can require several in-game days. Repeatedly pressing the reset button does not accelerate this process.
+SS2 registers leader packs asynchronously. Newly installed leaders may take several minutes, and heavily scripted saves can require several in-game days. Once a pack is registered, **Refresh SS2 leader list** in the panel runs SS2's own check for which leaders are available; with many leader packs it can take up to half a minute.
 
 ## Using the panel
 
 Use **Assign or Replace City Leader** from an SS2 City Planner's Desk. NBL3 intercepts that option and presents the leader panel after the desk message closes.
 
-- Select a card and choose **Assign as leader** to continue through SS2's normal assignment flow.
-- Hover a trait, assignment, or settlement-limit tag to see its description.
+- Select a card and choose **Assign as leader** (or **Replace with** when the settlement already has a leader) to continue through SS2's normal assignment flow.
+- Hover a trait, assignment, or settlement-limit tag to see its description. With a controller, or with **Details area** set to **Always Show**, the selected leader's details appear below the list.
 - Use pack filters and search to narrow the roster.
-- Choose fullscreen or windowed display mode in Settings.
+- Choose display mode, interface scale, details area, and pausing in Settings.
 - On a controller, the hint strip shows move, cursor, scroll, confirm, close, box, and pack actions.
 - Choose **Open original Assign Leader menu** to use SS2's original picker.
-- Choose **Reset leaders cache** when SS2 has failed to register newly installed cards, then allow the rebuild time to finish.
+- Choose **Refresh SS2 leader list** after recruiting a new settler, so SS2 re-checks which leaders are available.
+- Choose **Version Notes** under the version number to read the notes for every release.
 
 ## Support
 
 - **Panel does not open:** confirm that Fallout 4 was launched through F4SE and that PrismaUI F4 2.2.1.2 is installed. NBL3 0.2.0 cannot load with PrismaUI 2.1.1 or newer.
 - **Leader pack is missing:** confirm that the ESP and every SS2 chapter are enabled, then allow SS2's registration process to finish.
-- **A leader remains unavailable:** NBL3 reflects SS2's own availability and settlement checks. Review the card's restrictions and character recruitment state.
+- **A leader remains unavailable:** NBL3 reflects SS2's own availability and settlement checks. The panel shows the reason under the card and in the details area; review the card's restrictions and the character's recruitment state.
 - **Log location:** `Documents\My Games\Fallout4\F4SE\NBL3.log`.
 
 When reporting a problem, include the exact Fallout 4 runtime, NBL3 version, `NBL3.log`, `f4se.log`, `PrismaUI_F4.log`, load order, affected leader or settlement, and reproduction steps.

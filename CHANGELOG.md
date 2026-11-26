@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.4.0] - 2026-11-26
+
+F4SE package only. The standalone leader pack remains **1.0.0**.
+
+### ✨ Additions
+
+- Added a details area under the leader list. It shows the selected leader's traits with their full effect, the card's restrictions, the settlements they lead, and the current leader's traits for comparison.
+- Added **Details area** to the panel settings. **Auto** shows the details area while a controller is in use; **Always Show** shows it with a mouse too.
+- Selecting a trait in the details area searches the list for it.
+- Added **Pause Game While Open** to the panel settings, on by default, like SS2's own leader menu.
+- Added **Interface scale** to the panel settings, from 75% to 200%, to make the whole panel smaller or larger on high resolutions.
+- Greyed-out leaders now show why they can't be assigned: not available in SS2 yet, already leading another settlement, or refused by SS2 for this settlement.
+
+### 🔄 Changes
+
+- Leaders are now checked with SS2 for the settlement being managed. A leader SS2 would refuse is greyed out instead of failing after **Assign**.
+- Leader cards show only the traits SS2 applies. A minor trait with no matching weakness is no longer listed.
+- **Reset leader list** is now **Refresh SS2 leader list**. It runs SS2's own leader-card update, then reloads the list without closing the panel. With many leader packs it can take up to half a minute.
+- The **Assign** button reads **Replace with** and the leader's name when the settlement already has a leader.
+- Windowed mode is smaller and narrower.
+- Leader pack headers count the leaders who can lead this settlement.
+- Leader packs are listed by name, with Nobody's Leaders 3 first.
+- When SS2 is still busy with another selection at the City Planner's Desk, SS2's own message shows instead of the panel.
+
+### 🌿 Quality of Life
+
+- Searching long leader lists is smoother.
+- Changing panel settings keeps any comments and extra lines in the settings file.
+
+### 🛠️ Fixes
+
+- Fixed SS2's leader menu opening together with the panel when the Nobody's Leaders 3 plugin was not loaded. The panel now works the same with any leader pack.
+- Fixed a rare case where SS2's leader menu opened on top of the panel.
+
 ## [0.3.2] - 2026-10-27
 
 F4SE package only. The standalone leader pack remains **1.0.0**.
